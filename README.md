@@ -53,6 +53,11 @@
       <td>14/04/2023</td>
       <td>14/04/2023</td>
     </tr>
+    <tr>
+      <td>ExMon</td>
+      <td>15/04/2023</td>
+      <td>In Development</td>
+    </tr>
   </tbody>
 </table>
 
@@ -60,7 +65,7 @@
 
 ### Pre-requisites
 
-Before starting, you will need to have the following tools installed on your machine: [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) and [Npm](https://www.npmjs.com/). It's good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
+Before starting, you will need to have the following tools installed on your machine: [Git](https://git-scm.com) and [Elixir](https://elixir-lang.org/). It's good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
 
 ### Run this project
 
