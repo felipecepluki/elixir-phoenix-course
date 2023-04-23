@@ -12,3 +12,17 @@ If the player or computer has 0 life, the game is over
 If someone loses, when displaying the final result, it should not be displayed that a player has negative life.
 The human player will be able to choose the name of his character, as well as the name of his 3 movements.
 
+### To run the project:
+
+```bash
+iex -S mix
+```
+
+#### Create the player:
+```bash
+player = ExMon.create_player("Felipe", :chute, :soco, :cura)
+```
+#### Start the Game:
+```bash
+ExMon.start_game(player)
+```
