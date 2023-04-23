@@ -26,3 +26,8 @@ player = ExMon.create_player("Felipe", :chute, :soco, :cura)
 ```bash
 ExMon.start_game(player)
 ```
+
+#### Run move:
+```bash
+ExMon.make_move(:chute)
+```
