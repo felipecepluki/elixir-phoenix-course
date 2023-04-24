@@ -5,7 +5,7 @@ defmodule ExMon.GameTest do
 
   describe "start/2" do
     test "starts the game state" do
-      player = Player.build("Rafael", :chute, :soco, :cura)
+      player = Player.build("Felipe", :chute, :soco, :cura)
       computer = Player.build("Robotinik", :chute, :soco, :cura)
 
       assert {:ok, _pid} = Game.start(computer, player)
@@ -14,7 +14,7 @@ defmodule ExMon.GameTest do
 
   describe "info/0" do
     test "returns the current game state" do
-      player = Player.build("Rafael", :chute, :soco, :cura)
+      player = Player.build("Felipe", :chute, :soco, :cura)
       computer = Player.build("Robotinik", :chute, :soco, :cura)
 
       Game.start(computer, player)
@@ -28,7 +28,7 @@ defmodule ExMon.GameTest do
         player: %Player{
           life: 100,
           moves: %{move_avg: :soco, move_heal: :cura, move_rnd: :chute},
-          name: "Rafael"
+          name: "Felipe"
         },
         status: :started,
         turn: :player
@@ -40,7 +40,7 @@ defmodule ExMon.GameTest do
 
   describe "update/1" do
     test "returns the game state updated" do
-      player = Player.build("Rafael", :chute, :soco, :cura)
+      player = Player.build("Felipe", :chute, :soco, :cura)
       computer = Player.build("Robotinik", :chute, :soco, :cura)
 
       Game.start(computer, player)
@@ -54,7 +54,7 @@ defmodule ExMon.GameTest do
         player: %Player{
           life: 100,
           moves: %{move_avg: :soco, move_heal: :cura, move_rnd: :chute},
-          name: "Rafael"
+          name: "Felipe"
         },
         status: :started,
         turn: :player
@@ -71,7 +71,7 @@ defmodule ExMon.GameTest do
         player: %Player{
           life: 50,
           moves: %{move_avg: :soco, move_heal: :cura, move_rnd: :chute},
-          name: "Rafael"
+          name: "Felipe"
         },
         status: :started,
         turn: :player

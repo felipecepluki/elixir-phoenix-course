@@ -31,3 +31,8 @@ ExMon.start_game(player)
 ```bash
 ExMon.make_move(:chute)
 ```
+
+#### To test the project:
+```bash
+mix test
+```
