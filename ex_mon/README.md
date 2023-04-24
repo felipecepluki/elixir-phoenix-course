@@ -12,6 +12,11 @@ If the player or computer has 0 life, the game is over
 If someone loses, when displaying the final result, it should not be displayed that a player has negative life.
 The human player will be able to choose the name of his character, as well as the name of his 3 movements.
 
+###  Challenges:
+[  ] Finishing testing other modules <br />
+[  ] Raffle which player starts the match <br />
+[  ] Increase the computer's chance to heal itself when below 40 health
+
 ### To run the project:
 
 ```bash
