@@ -56,6 +56,11 @@
     <tr>
       <td>ExMon</td>
       <td>15/04/2023</td>
+      <td>23/04/2023</td>
+    </tr>
+     <tr>
+      <td>ExMon API</td>
+      <td>25/04/2023</td>
       <td>In Development</td>
     </tr>
   </tbody>
