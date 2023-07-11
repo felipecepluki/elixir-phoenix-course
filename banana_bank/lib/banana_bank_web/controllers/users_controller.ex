@@ -14,10 +14,11 @@ defmodule BananaBankWeb.UsersController do
     end
   end
 
-  # defp handle_response({:error, changeset}, conn) do
-  #  conn
-  # |> put_status(:bad_request)
-  # |> put_view(json: BananaBankWeb.ErrorJSON)
-  # |> render(:error, changeset: changeset)
-  # end
+  def show(conn, %{"id" => id}) do
+    with {:ok, %User{} = user} <- Users.get(id) do
+      conn
+      |> put_status(:ok)
+      |> render(:get, user: user)
+    end
+  end
 end
