@@ -6,6 +6,7 @@ defmodule BananaBank.Users.User do
 
   @required_params [:name, :password, :email, :cep]
 
+  @derive {Jason.Encoder, except: [:__meta__]}
   schema "users" do
     field :name, :string
     field :password, :string, virtual: true
