@@ -9,6 +9,8 @@ defmodule BananaBankWeb.UsersJSON do
 
   def get(%{user: user}), do: %{data: user}
 
+  def update(%{user: user}), do: %{message: "User updated with success!", data: data(user)}
+
   defp data(%User{} = user) do
     %{
       message: "User created with success!",
