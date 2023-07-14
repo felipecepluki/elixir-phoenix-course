@@ -12,15 +12,33 @@ defmodule BananaBank.ViaCep.ClientTest do
     test "successfully returns cep info", %{bypass: bypass} do
       cep = "2956000"
 
+      body = ~s{
+        "bairro": "",
+        "cep": "29560-000",
+        "complemento": "",
+        "ddd": "28",
+        "gia": "",
+        "ibge": "3202306",
+        "localidade": "Guaçuí",
+        "logradouro": "",
+        "siafi": "5645",
+        "uf": "ES"
+      }
+
       expected_response = "banana"
 
-      # Bypass.expect(bypass, fn conn ->
-      #   Plug.Conn.resp(conn, 200, "")
-      # end)
+      Bypass.expect(bypass, fn conn ->
+        Plug.Conn.resp(conn, 200, body)
+      end)
 
-      response = Client.call(cep)
+      response =
+        bypass.port
+        |> endpoint_url()
+        |> Client.call(cep)
 
-      assert response = expected_response
+      assert response == expected_response
     end
   end
+
+  defp endpoint_url(port), do: "http://localhost:#{port}/"
 end
