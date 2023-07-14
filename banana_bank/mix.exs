@@ -42,7 +42,8 @@ defmodule BananaBank.MixProject do
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
       {:argon2_elixir, "~> 3.0"},
-      {:tesla, "~> 1.4"}
+      {:tesla, "~> 1.4"},
+      {:bypass, "~> 2.1", only: :test}
     ]
   end
 
