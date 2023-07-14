@@ -8,7 +8,7 @@ defmodule BananaBankWeb.UsersControllerTest do
     test "successfully creates an user", %{conn: conn} do
       params = %{
         "name" => "João",
-        "cep" => "12345678",
+        "cep" => "29560000",
         "email" => "joao@banana.com",
         "password" => "123456"
       }
@@ -18,7 +18,7 @@ defmodule BananaBankWeb.UsersControllerTest do
         |> json_response(:created)
 
       assert %{
-        "data" => %{"cep" => "12345678", "email" => "joao@banana.com", "id" => _id, "name" => "João"},
+        "data" => %{"cep" => "29560000", "email" => "joao@banana.com", "id" => _id, "name" => "João"},
         "message" => "User created with success!"
       } = response
     end
