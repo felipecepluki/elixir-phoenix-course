@@ -1,5 +1,6 @@
 defmodule BananaBankWeb.UsersJSON do
   alias BananaBank.Users.User
+  
   def create(%{user: user}) do
     %{
       message: "User created with success!",
