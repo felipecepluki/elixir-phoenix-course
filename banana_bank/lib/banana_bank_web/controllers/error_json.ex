@@ -20,7 +20,9 @@ defmodule BananaBankWeb.ErrorJSON do
     }
   end
 
-  def error(%{status: status}), do: %{status: status,}
+  def error(%{status: status}), do: %{status: status}
+
+  def error(%{msg: msg}), do: %{message: msg}
 
   def error(%{changeset: changeset}) do
     %{
