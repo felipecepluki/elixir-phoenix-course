@@ -1,12 +1,21 @@
 defmodule BananaBankWeb.UsersJSON do
   alias BananaBank.Users.User
-  
+
   def create(%{user: user}) do
     %{
       message: "User created with success!",
       data: data(user)
     }
   end
+
+  def login(%{token: token}) do
+    %{
+      message: "User authenticated with success!",
+      bearer: token
+    }
+  end
+
+  def delete(%{user: user}), do: %{data: data(user)}
 
   def get(%{user: user}), do: %{data: user}
 
