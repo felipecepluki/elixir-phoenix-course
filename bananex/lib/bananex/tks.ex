@@ -15,6 +15,7 @@ defmodule Bananex.Tks do
     5
   end
 
+  @spec light_work :: 2
   def light_work do
     :timer.sleep(500)
     IO.inspect("Light work")
