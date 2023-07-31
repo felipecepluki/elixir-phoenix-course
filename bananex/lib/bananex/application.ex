@@ -17,9 +17,10 @@ defmodule Bananex.Application do
       # Start Finch
       {Finch, name: Bananex.Finch},
       # Start the Endpoint (http/https)
-      BananexWeb.Endpoint
+      BananexWeb.Endpoint,
       # Start a worker by calling: Bananex.Worker.start_link(arg)
       # {Bananex.Worker, arg}
+      Bananex.Scheduler
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
