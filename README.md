@@ -58,10 +58,15 @@
       <td>15/04/2023</td>
       <td>23/04/2023</td>
     </tr>
-     <tr>
+    <tr>
       <td>Banana_Bank</td>
       <td>09/07/2023</td>
-      <td>In Development</td>
+      <td>31/07/2023</td>
+    </tr>
+    <tr>
+      <td>Bananex</td>
+      <td>31/07/2023</td>
+      <td>31/07/2023</td>
     </tr>
   </tbody>
 </table>
